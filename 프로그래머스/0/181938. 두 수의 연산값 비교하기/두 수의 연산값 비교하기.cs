@@ -6,11 +6,13 @@ public class Solution {
     }
     public int CirclePlus(int a, int b)
     {
-        string aString = a.ToString();
-        string bString = b.ToString();
+        int temp = b;
+        while(temp != 0)
+        {
+            temp /= 10;
+            a *= 10;
+        }
         
-        string temp = aString + bString;
-        
-        return int.Parse(temp);
+        return a + b;
     }
 }
