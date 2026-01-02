@@ -10,7 +10,8 @@ public class Example
         s = Console.ReadLine().Split(' ');
 
         int a = Int32.Parse(s[0]);
+        int b = a & 1;
         
-        Console.Write($"{a} is {a % 2 == 0 ? "even" : "odd"}");
+        Console.Write($"{a} is {b == 1 ? "odd" : "even"}");
     }
 }
