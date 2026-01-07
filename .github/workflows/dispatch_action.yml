@@ -14,4 +14,4 @@ jobs:
        with:
          token: ${{ secrets.GH_PAT }}
          repository: baewhv/programmers-badge
-         event-type: trigger-workflow
+         event-type: trigger-action
