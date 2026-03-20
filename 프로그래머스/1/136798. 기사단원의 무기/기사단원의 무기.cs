@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 public class Solution {
     public int solution(int number, int limit, int power) {
@@ -15,12 +16,16 @@ public class Solution {
     }
     public int GetDivisor(int n)
     {
-        int temp = 0;
+        HashSet<int> temp = new HashSet<int>();
         for(int i = 1; i*i <= n; i++)
         {
-            if(i*i == n) temp++;
-            else if(n%i == 0) temp +=2;
+            
+            if(n%i == 0)
+            {
+                temp.Add(i);
+                temp.Add(n/i);
+            }
         }
-        return temp;
+        return temp.Count;
     }
 }
