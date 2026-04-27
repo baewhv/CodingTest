@@ -5,7 +5,9 @@ using namespace std;
 int main()
 {
     int n, temp, maxN = -1000, sumN = -1000;
+    bool check = false;
     cin >> n;
+    
 
     for (int i = 0; i < n; i++)
     {
