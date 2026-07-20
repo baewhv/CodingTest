@@ -1,7 +1,4 @@
 using System;
-using System.Collections;
-
-
 
 public class Solution {
     public int solution(int k, int m, int[] score) {
