@@ -10,13 +10,9 @@ public class Solution {
         dic['I'] = 3;
         dic['O'] = 4;
         dic['U'] = 5;
-        while(word.Length != 5)
-        {
-            word = $"{word} ";
-        }
+
         for(int i = 0; i < word.Length; i++)
         {
-            if(word[i] == ' ') break;
             int temp = 0;
             for(int j = 1; j < dic.Count-i; j++)
             {
